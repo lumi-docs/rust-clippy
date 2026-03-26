@@ -54,6 +54,8 @@ extern crate clippy_utils;
 #[macro_use]
 extern crate declare_clippy_lint;
 
+extern crate lumi_clippy_lints;
+
 mod utils;
 
 pub mod declared_lints;
@@ -865,4 +867,5 @@ pub fn register_lint_passes(store: &mut rustc_lint::LintStore, conf: &'static Co
         // add late passes here, used by `cargo dev new_lint`
     ];
     store.late_passes.extend(late_lints);
+    lumi_clippy_lints::register_lumi_lints(store);
 }
