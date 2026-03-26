@@ -54,7 +54,6 @@ extern crate clippy_utils;
 #[macro_use]
 extern crate declare_clippy_lint;
 
-extern crate lumi_clippy_lints;
 
 mod utils;
 
