@@ -22,6 +22,7 @@ unicode-normalization = "0.1"
 unicode-script = { version = "0.5", default-features = false }
 semver = "1.0"
 url = "2.2"
+lumi-clippy-lints = { path = "../../crates/infrastructure/clippy-lints" }
 
 [dependencies.toml]
 version = "0.9.7"

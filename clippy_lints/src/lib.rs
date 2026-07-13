@@ -867,5 +867,9 @@ rustc_lint::late_lint_methods!(
         RedundantElse: redundant_else::RedundantElse = redundant_else::RedundantElse,
         RestWhenDestructuringStruct: rest_when_destructuring_struct::RestWhenDestructuringStruct = rest_when_destructuring_struct::RestWhenDestructuringStruct,
         // add late passes here, used by `cargo dev new_lint`
+    ];
+    store.late_passes.extend(late_lints);
+    lumi_clippy_lints::register_lumi_lints(store);
+}
     ]]
 );
